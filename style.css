@@ -179,8 +179,8 @@ body {
 }
 .rightbox {
   width: 100%;
-  height: 60vh;
-
+  position: relative;
+  display: flex;
   overflow: hidden;
   border-radius: 1.5rem;
   box-shadow: 0px 5px 10px black;
@@ -188,6 +188,8 @@ body {
 .rightboximage {
   height: 100%;
   width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 @media (min-width: 768px) {
   .maincontent {
@@ -198,14 +200,16 @@ body {
   .leftbox {
     align-items: start;
   }
+ 
 }
 
 .minisection {
   margin: 2rem 0rem;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 
   gap: 1rem;
   padding: 2rem;
@@ -221,12 +225,13 @@ body {
     transform: translateX(0);
   }
 }
+
 .miniheader {
   font-size: 2.1rem;
 }
 .minicon {
   display: grid;
-  width: 60%;
+  width: 100%;
   height: 5.1rem;
   background: #edebeb;
   border-radius: 10px solid rgb(237, 235, 235);
@@ -237,6 +242,13 @@ body {
   justify-items: center;
 
   border-radius: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+ 
+  .minicon{
+    width: 60%;
+    
+  }
 }
 .iconimg {
   height: 1.5rem;
@@ -282,8 +294,8 @@ body {
 }
 
 .section2 {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   background: #edebeb;
 }
 .cardcontainer {
@@ -344,6 +356,17 @@ body {
   width: 50%;
   padding: 0.5rem;
 }
+@media screen and (max-width: 768px) {
+  .section2box {
+    width: 70%;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+  .section3header{
+    padding: 1rem;
+  }
+}
+
 .boxheader {
   display: flex;
   flex-direction: column;
@@ -448,7 +471,7 @@ body {
   padding: 0.7rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  align-items: center;
+  
   justify-content: space-between;
   gap: 1.5rem;
   text-align: center;
@@ -471,7 +494,13 @@ body {
   align-items: center;
   gap: 0.5rem;
 }
-.profile1,
+.profile1{
+  border: 1.7px solid rgb(133, 130, 130);
+  border-radius: 10px;
+  padding: 0.7rem;
+
+  transition: all 0.22s ease 0s;
+}
 .profile2,
 .profile3 {
   border: 1.7px solid rgb(133, 130, 130);
@@ -548,6 +577,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  background: #edebeb;
 }
 .section4rightheading {
   font-size: 2.2rem;
@@ -617,7 +647,8 @@ body {
   align-items: center;
 }
 .s5rightbox {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
   padding: 1.5rem;
   gap: 1.5rem;
   
