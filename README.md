@@ -1,3 +1,4 @@
 # StudySync-project
 This is my first frontend project.
-Author - krishna kushwaha
+<br>
+Author - krishna kushwaha(krishnakushwaha07)
