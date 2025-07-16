@@ -7,17 +7,17 @@
 body {
   height: 100%;
   width: 100%;
+  position: relative;
 }
 .header {
+  position: relative;
   width: 100vw;
-  margin-top: 1rem;
   display: flex;
   justify-content: center;
   height: 3rem;
 }
 .headercontent {
   width: 80%;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -41,20 +41,16 @@ body {
   margin-right: 0.5rem;
 }
 .nav {
-  /*display: flex;*/
-  display: none;
+  display: flex;
+  align-items: center;
+  position: relative;
   gap: 1.2rem;
 }
-@media screen and (min-width: 768px) {
-  .nav {
-    display: flex;
-  }
-}
+
 .navlink {
   color: rgb(99, 93, 93);
   font-size: 1.25rem;
   font-weight: 550;
-  transform: color 0.1s;
 }
 .navlink:hover {
   color: rgb(22, 22, 23);
@@ -88,14 +84,45 @@ body {
 }
 @media screen and (max-width: 768px) {
   .menubutton {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
     display: block;
   }
 }
-.menuicon {
+
+@media screen and (max-width: 768px) {
+  .hide {
+    display: none;
+  }
+
+  .nav {
+    height: 400px;
+    width: 50vw;
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    gap: 2rem;
+    padding: 4rem;
+    border-radius: 5px;
+    background: #4e45f9;
+    flex-direction: column;
+    z-index: 998;
+  }
+  .navlink {
+    color: white;
+    font-size: 1.7rem;
+  }
+}
+
+#menuicon {
   display: flex;
   align-items: center;
   height: 1.9rem;
   width: 2rem;
+  position: absolute;
+  right: 1rem;
+  z-index: 999;
 }
 .main {
   width: 100vw;
@@ -200,7 +227,6 @@ body {
   .leftbox {
     align-items: start;
   }
- 
 }
 
 .minisection {
@@ -244,10 +270,8 @@ body {
   border-radius: 0.5rem;
 }
 @media screen and (min-width: 768px) {
- 
-  .minicon{
+  .minicon {
     width: 60%;
-    
   }
 }
 .iconimg {
@@ -362,7 +386,7 @@ body {
     grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
   }
-  .section3header{
+  .section3header {
     padding: 1rem;
   }
 }
@@ -471,7 +495,7 @@ body {
   padding: 0.7rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  
+
   justify-content: space-between;
   gap: 1.5rem;
   text-align: center;
@@ -494,7 +518,7 @@ body {
   align-items: center;
   gap: 0.5rem;
 }
-.profile1{
+.profile1 {
   border: 1.7px solid rgb(133, 130, 130);
   border-radius: 10px;
   padding: 0.7rem;
@@ -648,10 +672,9 @@ body {
 }
 .s5rightbox {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   padding: 1.5rem;
   gap: 1.5rem;
-  
 }
 .sectioncol {
   display: flex;
@@ -659,11 +682,11 @@ body {
   flex-direction: column;
   font-size: 1.3rem;
 }
-.sectioncol a{
+.sectioncol a {
   color: rgb(122, 121, 121);
 }
 
-.section5footer{
+.section5footer {
   text-align: center;
   width: 100%;
   background: #edebeb;

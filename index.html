@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>StudySync Website</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="./Images/StudySyn.svg" type="image/x-icon">
-    
+    <link
+      rel="shortcut icon"
+      href="./Images/StudySyn.svg"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <div class="header">
@@ -16,22 +19,21 @@
           <span class="logotext">StudySync</span>
         </a>
 
-        <nav class="nav">
+        <button class="menubutton ">
+          <img src="./Images/Hamburger.svg" alt="Menu" id="menuicon" />
+        </button>
+        <nav class="nav" id="nav">
           <a href="#Home" class="navlink">Home</a>
           <a href="#Feature" class="navlink">Feature</a>
           <a href="#Pricing" class="navlink">Pricing</a>
           <a href="#Blog" class="navlink">Blog</a>
           <a href="#About" class="navlink">About</a>
+          <a href="#Contact" class="contactbutton"> Contact Us </a>
         </nav>
-
-        <a href="#Contact" class="contactbutton"> Contact Us </a>
-
-        <button class="menubutton">
-          <img src="./Images/Hamburger.svg" alt="Menu" class="menuicon" />
-        </button>
       </div>
     </div>
-
+    <main>
+      
     <div class="main">
       <section class="maincontent">
         <div class="leftbox">
@@ -175,7 +177,7 @@
 
           <div class="profileinfo">
             <div class="profilename">Sarah Johnson</div>
-             8th Grade English Teacher
+            8th Grade English Teacher
           </div>
         </div>
 
@@ -187,7 +189,7 @@
 
           <div class="profileinfo">
             <div class="profilename">Mark Davis</div>
-              Parent
+            Parent
           </div>
         </div>
 
@@ -199,7 +201,7 @@
 
           <div class="profileinfo">
             <div class="profilename">Dr. James Carter</div>
-             School Administrater
+            School Administrater
           </div>
         </div>
       </div>
@@ -292,9 +294,10 @@
         </div>
       </div>
 
-      <div class="section5footer">
-         &#169;StudySync All right reserved 2025
-      </div>
+      <div class="section5footer">&#169;StudySync All right reserved 2025</div>
     </div>
+    </main>
+
+    <script src="script.js"></script>
   </body>
 </html>
